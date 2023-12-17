@@ -13,7 +13,7 @@ interface Props {
 const CardProject = ({ imgUrl, title, site, github }: Props) => {
   return (
     <div className='flex justify-center items-center flex-col gap-4 p-2 bg-darkNav rounded-md'>
-      <Image width={200} height={150} src={imgUrl} alt='profile' className='rounded-md bg-cover w-[200px] h-[150px]'></Image>
+      <Image width={200} height={150} src={imgUrl} alt='profile' className='rounded-md w-[200px] h-[150px] object-cover'></Image>
       <p>{title}</p>
       <div className='flex  justify-around gap-5 w-1/2 items-center'>
         <Link title='visit project' href={site} target='_blank' className='hover:text-purple-400'>
